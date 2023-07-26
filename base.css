@@ -24,8 +24,8 @@ body {
     padding: 10px 20px 0px;
 }
 .header {
-    background-color: rgb(5, 108, 108);
-    min-height: 150px;
+    background-color: rgb(255, 255, 255);
+    min-height: 100px;
 }
 .content {
     background-color: white;
@@ -33,6 +33,7 @@ body {
     padding: 20px;
 }
 .footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+    background-color: rgb(223, 217, 241);
+    min-height: 100px;
+    text-align: center;
 }
