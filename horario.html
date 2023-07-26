@@ -11,98 +11,124 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         table {
-            -webkit-box-shadow: 18px 16px 5px 0px rgba(222,222,222,1);
-            -moz-box-shadow: 18px 16px 5px 0px rgba(222,222,222,1);
-            box-shadow: 18px 16px 5px 0px rgba(222,222,222,1);
+            -webkit-box-shadow: 18px 16px 5px 0px rgba(222, 222, 222, 1);
+            -moz-box-shadow: 18px 16px 5px 0px rgba(222, 222, 222, 1);
+            box-shadow: 18px 16px 5px 0px rgba(222, 222, 222, 1);
             border: solid 1px grey;
             text-align: center;
         }
+
         table thead th {
-           background-color: rgb(38, 50, 219);
-           color: white; 
+            background-color: rgb(38, 50, 219);
+            color: white;
         }
-        table tbody tr:nth-child(even) td{
+
+        table tbody tr:nth-child(even) td {
             background-color: #f1f1f1;
         }
-        table tbody tr:hover td{
+
+        table tbody tr:hover td {
             background-color: #f9f9f9;
             cursor: pointer;
+        }
+
+        nav ul {
+            display: inline;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li a {
+            padding: 5px 5px;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px 0px;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            background-color: blue;
         }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="menu">
-            <!-- Aqui vai o seu menu -->
+    <div class="menu">
+        <!-- Aqui vai o seu menu -->
+        <nav>
             <ul>
                 <li><a href="paginaPrincipal.html">Página Principal</a></li>
-                <li><a href="sobre.html">Sobre a clínica</a></li>
-                <li><a href="horario.html">Horário de atendimento</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="horario.html">Atendimento</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
+        </nav>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <!-- Aqui vai o seu header -->
+            <img src="i3.png" width="900" alt="médicos segurando tubos de ensaio">
         </div>
 
-        <div class="main">
-            <div class="header">
-                <!-- Aqui vai o seu header -->
-                <img src="i3.png" width="900" alt="médicos segurando tubos de ensaio">
-            </div>
-
-            <div class="content">
-                <!-- Aqui vai o seu conteúdo -->
-                <h1>Horário de atendimento</h1>
-                <p>A Clínica Saúde Para Todos possui atendimento para as especialidade de <a href="https://pt.wikipedia.org/wiki/Cl%C3%ADnica_m%C3%A9dica" target="_blank">Cliníca Médica</a>, <a href="https://pt.wikipedia.org/wiki/Ortopedia" target="_blank">Ortopedia</a> e <a href="https://pt.wikipedia.org/wiki/Cardiologia" target="_blank">Cardiologia</a>.</p>
-                <p>Abaixo, quadro de horários e valores do atendimento:</p>
-                <table summary="Tabela com informações sobre as especialidades médicas, preços e horário de atendimento" cellspacing="0" width="600" align="center" cellpading="5">
-                    <thead>
-                        <tr>
-                            <th colspan="5">Valores e horário de atendimento</th>
-                        </tr>
-                        <tr id="1">
-                            <th>Especialidade</th>
-                            <th>Valor</th>
-                            <th>Seg - Sex</th>
-                            <th>Sábado</th>
-                            <th>Domingo e feriados</th>
-                        </tr>
-                    <tbody>
-                        <tr>
-                            <td><strong>Clínica médica</strong></td>
-                            <td>R$150,00</td>
-                            <td>08h - 19h</td>
-                            <td>08h - 14h</td>
-                            <td>08h - 14h</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Ortopedia</strong></td>
-                            <td>R$200,00</td>
-                            <td>08h - 19h</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Cardiologia</strong></td>
-                            <td>R$200,00</td>
-                            <td>08h - 19h</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                    </tbody>
-                    </thead>                    
-                </table>
-            </div>
-
-            <div class="footer">
-                <!-- Aqui vai o seu rodapé -->
-                <address>Rua Rio de Janeiro, 1500, sl 15. Bairro Centro. Belo Horizonte/MG.</address>
-                <p>Redes Sociais</p>
-                <a href="https://www.linkedin.com/in/hugopassosornelas/" target="_blank"><i
-                        class="fa fa-linkedin w3-hover-opacity"></i></a>
-                <a href="https://github.dev/hugopassosdev/" target="_blank"><i
-                        class="fa fa-github w3-hover-opacity"></i></a>
-            </div>
+        <div class="content">
+            <!-- Aqui vai o seu conteúdo -->
+            <h1>Horário de atendimento</h1>
+            <p>A Clínica Saúde Para Todos possui atendimento para as especialidade de <a
+                    href="https://pt.wikipedia.org/wiki/Cl%C3%ADnica_m%C3%A9dica" target="_blank">Cliníca Médica</a>, <a
+                    href="https://pt.wikipedia.org/wiki/Ortopedia" target="_blank">Ortopedia</a> e <a
+                    href="https://pt.wikipedia.org/wiki/Cardiologia" target="_blank">Cardiologia</a>.</p>
+            <p>Abaixo, quadro de horários e valores do atendimento:</p>
+            <table summary="Tabela com informações sobre as especialidades médicas, preços e horário de atendimento"
+                cellspacing="0" width="600" align="center" cellpading="5">
+                <thead>
+                    <tr>
+                        <th colspan="5">Valores e horário de atendimento</th>
+                    </tr>
+                    <tr id="1">
+                        <th>Especialidade</th>
+                        <th>Valor</th>
+                        <th>Seg - Sex</th>
+                        <th>Sábado</th>
+                        <th>Domingo e feriados</th>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td><strong>Clínica médica</strong></td>
+                        <td>R$150,00</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ortopedia</strong></td>
+                        <td>R$200,00</td>
+                        <td>08h - 19h</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cardiologia</strong></td>
+                        <td>R$200,00</td>
+                        <td>08h - 19h</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>
         </div>
+
+        <div class="footer">
+            <!-- Aqui vai o seu rodapé -->
+            <address>Rua Rio de Janeiro, 1500, sl 15. Bairro Centro. Belo Horizonte/MG.</address>
+            <p>Redes Sociais</p>
+            <a href="https://www.linkedin.com/in/hugopassosornelas/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <a href="https://github.dev/hugopassosdev/" target="_blank"><i
+                    class="fa fa-github w3-hover-opacity"></i></a>
+        </div>
+    </div>
     </div>
 </body>
 

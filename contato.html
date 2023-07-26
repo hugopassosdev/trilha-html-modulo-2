@@ -9,53 +9,81 @@
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        nav ul {
+            display: inline;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li a {
+            padding: 5px 5px;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px 0px;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            background-color: blue;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="menu">
-            <!-- Aqui vai o seu menu -->
+    <div class="menu">
+        <!-- Aqui vai o seu menu -->
+        <nav>
             <ul>
                 <li><a href="paginaPrincipal.html">Página Principal</a></li>
-                <li><a href="sobre.html">Sobre a clínica</a></li>
-                <li><a href="horario.html">Horário de atendimento</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="horario.html">Atendimento</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
+        </nav>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <!-- Aqui vai o seu header -->
+            <img src="i4.png" width="900" alt="médicos segurando tubos de ensaio">
         </div>
 
-        <div class="main">
-            <div class="header">
-                <!-- Aqui vai o seu header -->
-                <img src="i4.png" width="900" alt="médicos segurando tubos de ensaio">
-            </div>
-
-            <div class="content">
-                <!-- Aqui vai o seu conteúdo -->
-               <a href="https://wa.me/5531995371705" target="_blank"><i class="fa fa-whatsapp"  w3-hover-opacity> Whatsapp: (31) 99537-1705</i></a><br>
-               <a href="#" target="_blank"><i class="fa fa-phone"  w3-hover-opacity> Telefone: (31) 92000-0234</i></a><br>
-               <h1>Endereço</h1>
-               <a href="https://goo.gl/maps/rhZFi94yUGQrbWWr9">Rua Rio de Janeiro, 1500, sl 15. Bairro Centro. Belo Horizonte/MG.</a><br>
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.929335208603!2d-43.94366928851877!3d-19.92738243815104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699e0f0158525%3A0x79dafe213151ba3c!2sR.%20Rio%20de%20Janeiro%2C%201500%20-%20Centro%2C%20Belo%20Horizonte%20-%20MG%2C%2030160-041!5e0!3m2!1spt-BR!2sbr!4v1690399156327!5m2!1spt-BR!2sbr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               <form method="get" autocomplete="on">
-                    <label><h1>Contato</h1></label>
-                    <label>Nome </label><input type="text" name="name"><br>
-                    <label>E-mail </label><input type="email" name="email"><br>
-                    <label>Assunto </label><input type="text" name="about"><br>
-                    <label>Mensagem </label><textarea name="message" id="" cols="30" rows="5"></textarea><br>
-                    <button type="submit">Enviar</button><button type="reset">Limpar</button>
-               </form>
-            </div>
-
-            <div class="footer">
-                <!-- Aqui vai o seu rodapé -->
-                <address>Rua Rio de Janeiro, 1500, sl 15. Bairro Centro. Belo Horizonte/MG.</address>
-                <p>Redes Sociais</p>
-                <a href="https://www.linkedin.com/in/hugopassosornelas/" target="_blank"><i
-                        class="fa fa-linkedin w3-hover-opacity"></i></a>
-                <a href="https://github.dev/hugopassosdev/" target="_blank">wha<i
-                        class="fa fa-github w3-hover-opacity"></i></a>
-            </div>
+        <div class="content">
+            <!-- Aqui vai o seu conteúdo -->
+            <a href="https://wa.me/5531995371705" target="_blank"><i class="fa fa-whatsapp" w3-hover-opacity> Whatsapp:
+                    (31) 99537-1705</i></a><br>
+            <a href="tel:+5531920000234" target="_blank"><i class="fa fa-phone" w3-hover-opacity> Telefone: (31)
+                    92000-0234</i></a><br>
+            <h1>Endereço</h1>
+            <a href="https://goo.gl/maps/rhZFi94yUGQrbWWr9">Rua Rio de Janeiro, 1500, sl 15. Bairro Centro. Belo
+                Horizonte/MG.</a><br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.929335208603!2d-43.94366928851877!3d-19.92738243815104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699e0f0158525%3A0x79dafe213151ba3c!2sR.%20Rio%20de%20Janeiro%2C%201500%20-%20Centro%2C%20Belo%20Horizonte%20-%20MG%2C%2030160-041!5e0!3m2!1spt-BR!2sbr!4v1690399156327!5m2!1spt-BR!2sbr"
+                width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form method="get" autocomplete="on">
+                <label>
+                    <h1>Contato</h1>
+                </label>
+                <label>Nome </label><input type="text" name="name"><br>
+                <label>E-mail </label><input type="email" name="email"><br>
+                <label>Assunto </label><input type="text" name="about"><br>
+                <label>Mensagem </label><textarea name="message" id="" cols="30" rows="5"></textarea><br>
+                <button type="submit">Enviar</button><button type="reset">Limpar</button>
+            </form>
         </div>
+
+        <div class="footer">
+            <!-- Aqui vai o seu rodapé -->
+            <address>Rua Rio de Janeiro, 1500, sl 15. Bairro Centro. Belo Horizonte/MG.</address>
+            <p>Redes Sociais</p>
+            <a href="https://www.linkedin.com/in/hugopassosornelas/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <a href="https://github.dev/hugopassosdev/" target="_blank">wha<i
+                    class="fa fa-github w3-hover-opacity"></i></a>
+        </div>
+    </div>
     </div>
 </body>
 
